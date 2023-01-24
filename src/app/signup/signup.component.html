@@ -1,0 +1,26 @@
+<div class="container" style="text-align:center" >
+    <form action="/action_page.php">
+      <div class="row">
+        <h2 style="text-align:center" ><b style="color: chartreuse;">SignUp Page</b></h2>
+    
+        <div class="col">  
+          
+          <input type="text" name="name" placeholder="Enter Your FullName" style="text-align:center" #myName required><br>
+          <input type="text" name="mobile" placeholder="Enter Your Mobile" style="text-align:center" required><br>
+          <input type="email" name="mail" placeholder="Enter Your Email" style="text-align:center" required><br>
+          <input type="password" name="password" placeholder="Create Your Password" style="text-align:center" required><br>
+          <input type="password" name="confirm" placeholder="Re-enter your Password" style="text-align:center" required><br>
+
+           <input type="submit" value="Sign Up" routerLink="signup" (click)="signupEvent(myName.value)"><br>
+        </div>
+
+        <label for="login" style="color:coral"> <i>Already have an account?</i></label>
+        <li><a routerLink="login">Login</a></li>
+
+      </div>
+    </form>
+  </div>
+
+  <!-- Routing of Component -->
+<router-outlet></router-outlet>
+  

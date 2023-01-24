@@ -1,0 +1,21 @@
+<div class="container" style="text-align:center" >
+    <form>
+      <div class="row">
+        <h2 style="text-align:center" ><b style="color: chartreuse;">Login Page</b></h2>
+    
+        <div class="col">  
+          <input type="text" name="username" placeholder="Username" style="text-align:center" #myName required><br>
+          <input type="password" name="password" placeholder="Password" style="text-align:center" required><br>
+          <input type="submit" value="Login" (click)="loginEvent(myName.value)"><br>
+        </div><br>
+
+        <label for="signup" style="color:coral"> <i>Don't have an account?</i></label>
+        <li><a><span routerLink="signup" class="glyphicon glyphicon-user" name="signup"></span> Sign Up</a></li>
+  
+      </div>
+    </form>
+  </div>
+
+  <!-- Routing of Component -->
+<router-outlet></router-outlet>
+  
